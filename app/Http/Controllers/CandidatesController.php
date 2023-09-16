@@ -59,6 +59,7 @@ class CandidatesController extends Controller
             'name' => 'required',
             'program' => 'required',
             'position' => 'required',
+            'school_level' => 'required',
             // 'photo' => 'mimes:png,jpg,jpeg|max:5048',
         ]);
 
@@ -80,6 +81,7 @@ class CandidatesController extends Controller
             'name' => $request->input('name'),
             'program' => $request->input('program'),
             'position' => $request->input('position'),
+            'school_level' => $request->input('school_level'),
         ]);
 
         // redirects to the results page

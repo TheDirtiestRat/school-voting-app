@@ -8,6 +8,9 @@
     <title>Reports</title>
 
     <style>
+        /* body {
+            background-image: url('../public/storage/Technocrats Icon.png');
+        } */
         .d-none {
             display: none;
         }
@@ -91,13 +94,18 @@
     <table class="no-borders">
         <tr>
             <td>
-                {{-- <img src="../public/storage/imgages/aclc logo.png" alt="" width="60"> --}}
-                {{-- <img src="{{ public_path() . '../storage/images/aclc logo.jpg' }}" alt="" width="60"> --}}
+                <img src="{{ public_path('storage/images/aclc logo.png') }}" alt="" width="60">
+                {{-- <img src="../aclc logo.png" alt="" width="60"> --}}
+                {{-- <img src="{{ base_path('/public/aclc logo.jpg') }}" alt="" width="60"> --}}
+                {{-- <img src="{{ asset('storage/images/aclc logo.jpg') }}" alt="" width="60"> --}}
                 <p>ACLC College</p>
             </td>
             <td><h1>ACLC Voting Election 2023</h1></td>
             <td>
-                {{-- <img src="../public/storage/Technocrats Icon.png" alt="" width="60"> --}}
+                <img src="{{ public_path('storage/Technocrats Icon.png') }}" alt="" width="60">
+                {{-- <img src="{{ url('public/Technocrats Icon.png') }}" alt="" width="60"> --}}
+                {{-- <img src="{{ asset('../storage/Technocrats Icon.png') }}" alt="" width="60"> --}}
+                {{-- <img src="../public/storage/Technocrats Icon.png" alt="" width="60">  --}}
                 <p>IT Department</p>
             </td>
         </tr>
